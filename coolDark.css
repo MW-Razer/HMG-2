@@ -1,0 +1,132 @@
+html, body {
+  background-color: #0c0b19;
+}
+
+#c0 {
+  background-color: #0c0b19;
+}
+
+div.norm {
+  font: 16px Verdana;
+  color: #ffffff;
+  background-color: #111122;
+  border-style: none;
+  outline-style: solid;
+  outline-color: #cccccc;
+  outline-width: 1px;
+  cursor: default;
+}
+
+label.norm, span.norm, p.norm {
+  text-shadow: none;
+  font: 16px Verdana;
+  color: #ffffff;
+  cursor: default;
+  outline-style: none;
+  border-style: none;
+  text-align: left;
+}
+
+label.light, p.light, span.light {
+  text-shadow: none;
+  color: #dddddd;
+  font-size: 15px;
+  cursor: default;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+button.norm, input.norm, label.file {
+  font: 16px Verdana;
+  color: #ffffff;
+  background-color: #1a1a2a;
+  border-style: none;
+  outline-style: solid;
+  outline-color: #cccccc;
+  outline-width: 1px;
+  cursor: pointer;
+}
+
+button.light, input.light {
+  font: 16px Verdana;
+  color: #dddddd;
+  background-color: #cccccc;
+  border-style: none;
+  outline-style: solid;
+  outline-color: #1a1a2a;
+  outline-width: 1px;
+  cursor: pointer;
+}
+
+button.selected, input.selected {
+  font: 16px Verdana;
+  color: #ffffff;
+  background-color: #303055;
+  border-style: none;
+  outline-style: solid;
+  outline-color: #aaaaff;
+  outline-width: 1px;
+  cursor: pointer;
+}
+
+input.norm, input.selected {
+  cursor: text;
+}
+
+button.norm:hover, input.norm:hover, label.file:hover {
+  background-color: #1a1a4c;
+}
+
+button.selected:hover, input.selected:hover {
+  background-color: #333366;
+}
+
+button.gray, input.gray {
+  color: #999999;
+  background-color: #505050;
+  outline-color: #bbbbbb;
+  cursor: default;
+}
+
+button.gray:hover, input.gray:hover {
+  color: #999999;
+  background-color: #505050;
+  outline-color: #bbbbbb;
+  cursor: default;
+}
+
+img.mono {
+  filter: brightness(1);
+  position: relative;
+}
+
+input.norm[type=range]::-webkit-slider-thumb {
+  background-color: #ffffff;
+}
+
+input.norm[type=range]::-moz-range-thumb {
+  background-color: #ffffff;
+}
+
+input.vertical[type=range]::-webkit-slider-thumb {
+  background-color: #ffffff;
+}
+
+input.vertical[type=range]::-moz-range-thumb {
+  background-color: #ffffff;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #212132;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8888aa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555577;
+}

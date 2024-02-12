@@ -1,0 +1,171 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: #ffffff;
+  margin: 0;
+  overscroll-behavior: none;
+}
+
+div .text {
+  padding-top: 5px;
+}
+
+canvas {
+  outline-style: none;
+  border-style: none;
+}
+
+#canvasDiv {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+#c0 {
+  position: absolute;
+  margin: 0;
+}
+
+#c1 {
+  position: absolute;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#c2 {
+  position: absolute;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#canvasDiv .cursor {
+  position: absolute;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: default;
+}
+
+label, p, span, button, input {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+input.norm[type=color] {
+  cursor: pointer;
+}
+
+input.norm[type=range][orient=vertical] {
+  writing-mode: bt-lr;
+  -webkit-appearance: slider-vertical;
+}
+
+div.transparent {
+  font: 16px Verdana;
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  outline-style: none;
+  cursor: default;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button.fac {
+  padding-bottom: 50px;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+.hex1::before {
+  content: "\2b22";
+  font-size: 35px;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  pointer-events: none;
+}
+
+.hex1 {
+  pointer-events: none;
+}
+
+
+input.norm[type=range] {
+  -webkit-appearance: none;
+  outline: 1px solid;
+  cursor: pointer;
+}
+
+input.norm[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 20px;
+  cursor: pointer;
+}
+
+input.norm[type=range]::-moz-range-thumb {
+  width: 10px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+input.vertical[type=range] {
+  -webkit-appearence: none;
+  outline: 1px solid;
+  padding: 0;
+  cursor: pointer;
+  transform: rotate(270deg);
+}
+
+input.vertical[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 10px;
+  cursor: pointer;
+  transform: rotate(270deg);
+}
+
+input.vertical[type=range]::-moz-range-thumb {
+  width: 20px;
+  height: 10px;
+  cursor: pointer;
+  transform: rotate(270deg);
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.round {
+  border-radius: 50px;
+}
+
+.partial {
+  opacity: 0.5;
+}
+
+#tempCanvas {
+  position: absolute;
+  z-index: 69;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 100px;
+  background-color: #ffffffaa;
+}
